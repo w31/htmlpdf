@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6308EEF18715A4000E6F601 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6308EEE18715A4000E6F601 /* WebViewDelegate.m */; };
 		B68307F91865DABC00CA4DB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68307F81865DABC00CA4DB4 /* Foundation.framework */; };
 		B68307FC1865DABC00CA4DB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B68307FB1865DABC00CA4DB4 /* main.m */; };
 		B68308001865DABD00CA4DB4 /* htmlpdf.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B68307FF1865DABD00CA4DB4 /* htmlpdf.1 */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6308EED18715A4000E6F601 /* WebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewDelegate.h; sourceTree = "<group>"; };
+		B6308EEE18715A4000E6F601 /* WebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewDelegate.m; sourceTree = "<group>"; };
 		B68307F51865DABC00CA4DB4 /* htmlpdf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = htmlpdf; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68307F81865DABC00CA4DB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B68307FB1865DABC00CA4DB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				B68307FD1865DABC00CA4DB4 /* Supporting Files */,
 				B6ACDFA21871527C004078E1 /* Options.h */,
 				B6ACDFA31871527C004078E1 /* Options.m */,
+				B6308EED18715A4000E6F601 /* WebViewDelegate.h */,
+				B6308EEE18715A4000E6F601 /* WebViewDelegate.m */,
 			);
 			path = htmlpdf;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			files = (
 				B6ACDFA41871527C004078E1 /* Options.m in Sources */,
 				B68307FC1865DABC00CA4DB4 /* main.m in Sources */,
+				B6308EEF18715A4000E6F601 /* WebViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
