@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Wei. All rights reserved.
 //
 
-#import <unistd.h>
+#import <getopt.h>
 #import "Options.h"
 
 @implementation Options
@@ -20,8 +20,15 @@
 {
     _topMargin = _leftMargin = 72.0;
     
+    static struct option longopts[] =
+    {
+        { "url", required_argument, NULL, 'i' },
+        { "output", required_argument, NULL, 'o' },
+        { NULL, 0, NULL, 0 }
+    };
     int c;
-    while ((c = getopt(argc, argv, "i:o:")) != -1) {
+
+    while ((c = getopt_long(argc, argv, "i:o:", longopts, NULL)) != -1) {
         switch (c) {
             case 'i':
                 _url = [[NSString alloc] initWithCString:optarg encoding:NSASCIIStringEncoding];
@@ -34,7 +41,7 @@
                 break;
         }
     }
-    
+
     return self;
 }
 

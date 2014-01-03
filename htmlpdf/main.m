@@ -24,7 +24,7 @@ int main(int argc, const char * argv[])
         Options *options = [[Options alloc]initWithArgc:argc argv:argv];
         
         if ([options hasValidOptions] == NO) {
-            printf("Usage: %s -i input -o output\n", APP_NAME);
+            printf("Usage: %s --url input --output output\n", APP_NAME);
             return 1;
         }
         
