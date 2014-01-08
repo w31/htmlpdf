@@ -12,6 +12,7 @@
 
 @property(readonly) NSString *url;
 @property(readonly) NSString *output;
+@property(readonly) NSString *media;
 @property(readonly) CGFloat topMargin;
 @property(readonly) CGFloat leftMargin;
 
