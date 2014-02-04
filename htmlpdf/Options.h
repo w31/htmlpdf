@@ -15,6 +15,7 @@
 @property(readonly) NSString *media;
 @property(readonly) CGFloat topMargin;
 @property(readonly) CGFloat leftMargin;
+@property(readonly) NSSize paperSize;
 
 - (id)initWithArgc:(int)argc argv:(const char **)argv;
 - (BOOL)hasValidOptions;

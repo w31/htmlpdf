@@ -34,7 +34,7 @@
     printInfo.horizontalPagination = NSAutoPagination;
     printInfo.verticalPagination = NSAutoPagination;
     
-    printInfo.paperSize = NSMakeSize(612, 792); // US Letter
+    printInfo.paperSize = cmdOptions.paperSize;
     printInfo.orientation = NSPaperOrientationPortrait;
     [printInfo setTopMargin:cmdOptions.topMargin];
     [printInfo setBottomMargin:cmdOptions.topMargin];
