@@ -41,6 +41,7 @@ int main(int argc, const char * argv[])
         
         WebPreferences *prefs = [WebPreferences standardPreferences];
         
+        [prefs setAutosaves:NO];
         [prefs setLoadsImagesAutomatically:YES];
         [prefs setAllowsAnimatedImages:YES];
         [prefs setAllowsAnimatedImageLooping:NO];
