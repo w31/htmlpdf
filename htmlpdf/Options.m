@@ -17,6 +17,7 @@
 @synthesize topMargin = _topMargin;
 @synthesize leftMargin = _leftMargin;
 @synthesize paperSize = _paperSize;
+@synthesize printTitle = _printTitle;
 
 - (id)initWithArgc:(int)argc argv:(const char **)argv
 {
@@ -28,6 +29,7 @@
     _media = @"print";
     _paperSize = NSSizeFromString([paperSizes objectForKey:@"letter"]);
     _topMargin = _leftMargin = 72.0;
+    _printTitle = NO;
     
     static struct option longopts[] =
     {
@@ -35,6 +37,7 @@
         { "output", required_argument, NULL, 'o' },
         { "media", required_argument, NULL, 'm' },
         { "paper", required_argument, NULL, 'p' },
+        { "title", no_argument, NULL, 't' },
         { NULL, 0, NULL, 0 }
     };
     int c;
@@ -57,6 +60,9 @@
                 if (paperSizeString != nil) {
                     _paperSize = NSSizeFromString(paperSizeString);
                 }
+                break;
+            case 't':
+                _printTitle = YES;
                 break;
                 
             default:

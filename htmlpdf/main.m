@@ -55,6 +55,7 @@ int main(int argc, const char * argv[])
         
         WebViewDelegate *webViewDelegate = [[WebViewDelegate alloc] initWithOptions:options];
         [webView setFrameLoadDelegate:webViewDelegate];
+        [webView setUIDelegate:webViewDelegate];
         [webView setApplicationNameForUserAgent:[NSString stringWithFormat:@"%s/%s", APP_NAME, APP_VERSION]];
         [webView setPreferences:prefs];
         [webView setMaintainsBackForwardList:NO];

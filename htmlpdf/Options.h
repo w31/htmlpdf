@@ -16,6 +16,7 @@
 @property(readonly) CGFloat topMargin;
 @property(readonly) CGFloat leftMargin;
 @property(readonly) NSSize paperSize;
+@property(readonly) BOOL printTitle;
 
 - (id)initWithArgc:(int)argc argv:(const char **)argv;
 - (BOOL)hasValidOptions;
