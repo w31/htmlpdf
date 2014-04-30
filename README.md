@@ -1,6 +1,8 @@
 htmlpdf
 =======
 
+A command line utility to convert HTML to PDF.
+
 Legal Stuff 
 -----------
 
