@@ -38,7 +38,7 @@
     NSMutableDictionary *sharedDict = [[NSPrintInfo sharedPrintInfo] dictionary];
     NSMutableDictionary *printInfoDict = [NSMutableDictionary dictionaryWithDictionary:sharedDict];
     [printInfoDict setObject:NSPrintSaveJob forKey:NSPrintJobDisposition];
-    [printInfoDict setObject:cmdOptions.output forKey:NSPrintSavePath];
+    [printInfoDict setObject:[NSURL URLWithString:cmdOptions.output] forKey:NSPrintJobSavingURL];
     [printInfoDict setObject:@YES forKey:NSPrintHeaderAndFooter];
     
     NSPrintInfo *printInfo = [[NSPrintInfo alloc] initWithDictionary:printInfoDict];
