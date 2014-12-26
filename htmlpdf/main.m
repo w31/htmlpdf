@@ -61,7 +61,12 @@ int main(int argc, const char * argv[])
         [webView setMaintainsBackForwardList:NO];
         [webView setMediaStyle:options.media];
         
-        NSURL *url = [NSURL fileURLWithPath:options.url];
+        NSURL *url;
+        if ([options.url hasPrefix:@"http"]) {
+            url = [NSURL URLWithString:options.url];
+        } else {
+            url = [NSURL fileURLWithPath:options.url];
+        }
         NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
         [[webView mainFrame] loadRequest:urlRequest];
         
