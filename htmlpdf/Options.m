@@ -22,7 +22,7 @@
 - (id)initWithArgc:(int)argc argv:(const char **)argv
 {
     NSDictionary *paperSizes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                NSStringFromSize(NSMakeSize(597, 842)), @"a4",
+                                NSStringFromSize(NSMakeSize(595, 841)), @"a4",
                                 NSStringFromSize(NSMakeSize(612, 792)), @"letter",
                                 nil];
 
